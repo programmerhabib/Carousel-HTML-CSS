@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carusel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container-img{
+            width: 60vw;
+            height: 30rem;
+            border-radius: 1rem;
+            box-shadow: rgba(100, 100, 111, 0.20) 0px 7px 29px 0px;
+            background-image: url(tech.jpg);
+            background-size: cover;
+            animation: gallery 10s linear infinite;
+        }
+        @keyframes gallery {
+            0%{
+                background-image: url(tech.jpg);
+            }
+            50%{
+                background-image: url(mario-bg.png);
+            }
+            100%{
+                background-image: url(laptop.jpg);
+            }
+
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="container-img">
+
+    </div>
+</body>
+</html>
